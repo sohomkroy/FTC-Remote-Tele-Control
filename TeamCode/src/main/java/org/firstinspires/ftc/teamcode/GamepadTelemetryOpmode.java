@@ -99,7 +99,7 @@ public class GamepadTelemetryOpmode extends OpMode
         telemetry.addData("Gamepad 2 Right Bumper:", ButtonPress.isGamepad2_right_bumper_pressed() ? "Pressed" : "Released");
         telemetry.addData("Gamepad 2 Left Bumper:", ButtonPress.isGamepad2_left_bumper_pressed() ? "Pressed" : "Released");
 
-        telemetry.update();
+
     }
 
     /*
