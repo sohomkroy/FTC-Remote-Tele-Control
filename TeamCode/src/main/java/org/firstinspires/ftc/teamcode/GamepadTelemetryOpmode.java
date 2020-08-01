@@ -70,8 +70,8 @@ public class GamepadTelemetryOpmode extends OpMode
         ButtonPress.giveMeInputs(gamepad1.a, gamepad1.b, gamepad1.x, gamepad1.y, gamepad1.dpad_up, gamepad1.dpad_down, gamepad1.dpad_right, gamepad1.dpad_left, gamepad1.right_bumper, gamepad1.left_bumper, gamepad1.left_stick_button, gamepad1.right_stick_button, gamepad2.a, gamepad2.b, gamepad2.x, gamepad2.y, gamepad2.dpad_up, gamepad2.dpad_down, gamepad2.dpad_right, gamepad2.dpad_left, gamepad2.right_bumper, gamepad2.left_bumper, gamepad2.left_stick_button, gamepad2.right_stick_button);
 
         telemetry.addData("Gamepad 1 Left Stick X", gamepad1.left_stick_x);
-        telemetry.addData("Gamepad 1 Left Stick Y", gamepad1.right_stick_y);
-        telemetry.addData("Gamepad 1 Right Stick X", gamepad1.left_stick_x);
+        telemetry.addData("Gamepad 1 Left Stick Y", gamepad1.left_stick_y);
+        telemetry.addData("Gamepad 1 Right Stick X", gamepad1.right_stick_x);
         telemetry.addData("Gamepad 1 Right Stick X", gamepad1.right_stick_y);
         telemetry.addData("Gamepad 1 A:", ButtonPress.isGamepad1_a_pressed() ? "Pressed" : "Released");
         telemetry.addData("Gamepad 1 B:", ButtonPress.isGamepad1_b_pressed() ? "Pressed" : "Released");
@@ -85,8 +85,8 @@ public class GamepadTelemetryOpmode extends OpMode
         telemetry.addData("Gamepad 1 Left Bumper:", ButtonPress.isGamepad1_left_bumper_pressed() ? "Pressed" : "Released");
 
         telemetry.addData("Gamepad 2 Left Stick X", gamepad2.left_stick_x);
-        telemetry.addData("Gamepad 2 Left Stick Y", gamepad2.right_stick_y);
-        telemetry.addData("Gamepad 2 Right Stick X", gamepad2.left_stick_x);
+        telemetry.addData("Gamepad 2 Left Stick Y", gamepad2.left_stick_y);
+        telemetry.addData("Gamepad 2 Right Stick X", gamepad2.right_stick_x);
         telemetry.addData("Gamepad 2 Right Stick X", gamepad2.right_stick_y);
         telemetry.addData("Gamepad 2 A:", ButtonPress.isGamepad2_a_pressed() ? "Pressed" : "Released");
         telemetry.addData("Gamepad 2 B:", ButtonPress.isGamepad2_b_pressed() ? "Pressed" : "Released");
